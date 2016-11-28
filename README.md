@@ -10,7 +10,7 @@
 ## How to use
 1. 開啟一個waitfor dialog
 	progressType設為false代表隱藏progress bar, image則是這個dialog所要顯示的圖片.
-
+```
 	function waitDialog() {
 		var setting = {
 			progressType: false,
@@ -18,7 +18,7 @@
 		};
 	waitingDialog.show("wait a minute", setting);
 	}
-
+```
 2. 關閉dialog
 	waitingDialog.hide();
 
@@ -34,6 +34,7 @@
 	waitingDialog.cancel(true);
 
 ## Example
+```
 function waitDialog() {
 	var setting = {
 		progressType: false,
@@ -66,4 +67,4 @@ function failDialog(message) {
 	};
 	waitingDialog.show(message, setting);
 }
-
+```
